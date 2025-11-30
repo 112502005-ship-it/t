@@ -6,7 +6,7 @@ CFLAGS = -Wall -g
 
 # Source and object files
 SRC = main.c grade.c menu.c student.c utils.c
-OBJ = main.o grade.o menu.o student.o utils.o
+OBJ = $(SRC:.c=.o)
 
 # Header files (included automatically in the source files)
 INCLUDE = menu.h student.h utils.h
